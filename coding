@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThriftbyJessi</title>
+    <style>
+      body {
+        background-color: #e4cddb;
+      }
+      h1 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        padding: 20px 10px;
+        border-radius: 10px;
+      }
+      h2 {
+        margin: 0;
+        text-align: center;
+        font-size: 20px;
+        line-height: 48px;
+        font-weight: 400;
+        font-family: Helvetica, Arial, sans-serif;
+        text-shadow: #16020f;
+      }
+      h5 {
+        margin: 0;
+        text-align: center;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 300;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+      p {
+        font-size: 20px;
+        opacity: 1;
+        text-align: center;
+        font-family: monospace;
+      }
+      span {
+        color: #d61a52;
+        font-size: medium;
+        font-weight: bold;
+      }
+      img {
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      ul {
+        padding: 0;
+      }
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+        display: list-item;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+      div {
+        text-align: center;
+        font-family: monospace;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #d61a52;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+      button:hover {
+        background: white;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/740/original/1000080907.jpg?1727694526"
+        width="150"
+      />
+    </h1>
+    <h2>
+      <p>
+        <strong>
+          <em>THRIFTBYJESSI STORE</em>
+        </strong>
+      </p>
+    </h2>
+    <h5>
+      Welcome to <span>ThriftbyJessi!</span>
+      <br />
+      Visit the locations where easygoing, everyday things converge to produce a
+      wardrobe you will love. Check out our newest designs for chic, hardworking
+      feminine looks perfect for demanding days and unyielding schedules.
+      Signature flowers, art-inspired motifs, trendy hues, and thoughtful
+      touches bring life to midi dresses, jumpsuits, party dresses, office wear,
+      and more, offering understated elegance you can count on every time. To
+      keep your wardrobe fresh, make an investment in versatile, new-season
+      classics that you can dress up and down often. Make a statement by
+      dressing in something new! From casual date nights to sophisticated
+      events, we provide the outfits to make you stand out! View our most recent
+      collections of slacks, dresses, shirts, bodysuits, jeans, and other items.
+    </h5>
+    <button class="touch">Sign Up!</button>
+    <hr />
+    <p>Let's explore some clothings together!</p>
+    <ul>
+      <li>
+        <p>Tops</p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/742/original/1000080922.jpg?1727694775"
+          width="500"
+        />
+      </li>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/739/original/1000080925.jpg?1727694499"
+          width="500"
+        />
+      </li>
+      <li>
+        <p>Elegent Dress</p>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/743/original/1000080919.jpg?1727695997"
+          width="500"
+        />
+      </li>
+      <li>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/741/original/1000080913.jpg?1727694762"
+          width="500"
+        />
+      </li>
+    </ul>
+    <hr />
+    <div>What to see more suggestions? Click on the button below 👇</div>
+    <a href="https://www.instagram.com/thriftbyjessi">
+      <button>Shop now</button>
+    </a>
+    <p>
+      Coded by
+      <a href="https://linktr.ee/Itskatieconnect"> Kate Amarachukwu Igwilo </a>
+    </p>
+  </body>
+  <script>
+    function cloth() {
+      let name = prompt("What is your name love?");
+      let place = prompt("Which country are you based?");
+      let h2 = document.querySelector("h2");
+
+      if (place === "Nigeria") {
+        h2.innerHTML =
+          "😄 Welcome " +
+          name +
+          ", Thank you for signing up, we will be in touch";
+      } else {
+        h2.innerHTML = "😟😞😭 We are based in Nigeria, " + name;
+      }
+    }
+    let signUpButton = document.querySelector("button");
+    signUpButton.addEventListener("click", cloth);
+  </script>
+</html>
